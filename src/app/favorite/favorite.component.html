@@ -1,0 +1,8 @@
+<p>
+  favorite works! Look!
+</p>
+
+<div>
+  <fa-icon (click)="onFavClick()" [icon]="isFav ? 'star' : 'star-half-alt'"></fa-icon>
+  <span [innerHTML]="isFav ? 'You Like this post!' : ''"></span>
+</div>

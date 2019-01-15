@@ -1,0 +1,11 @@
+
+fa-icon {
+    cursor: pointer;
+    margin: 0 0.2em;
+}
+.likeColor {
+    color: deeppink;
+}
+.notLikeColor {
+    color: #CCC;
+}
