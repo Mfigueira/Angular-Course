@@ -1,4 +1,4 @@
-# Angular 4 Course - my exercises
+# Angular 4 Course Exercises
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
