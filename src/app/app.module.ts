@@ -1,10 +1,10 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-//Components
+// Components
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
@@ -15,18 +15,19 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CourseFormComponent } from './course-form/course-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { PostsComponent } from './posts/posts.component';
-//Services
+// Services
 import { CoursesService } from './services/courses.service';
 import { PostService } from './services/post.service';
-//Pipes
+// Pipes
 import { SummaryPipe } from './pipes/summary.pipe';
 import { TitleCasePipe } from './pipes/title-case.pipe';
-//FontAwesome Icons
+// FontAwesome Icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
 
 
 
@@ -43,14 +44,16 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
     LikeComponent,
     ContactFormComponent,
     CourseFormComponent,
-    PostsComponent
+    PostsComponent,
+    ChangePasswordFormComponent
   ], // Here goes the components
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ], // Here goes Angular Modules into the App Module
   providers: [
     CoursesService,
