@@ -15,12 +15,10 @@ export class PasswordValidators {
     }
 
     static matchedPasswords(control: AbstractControl): ValidationErrors|null {
-        let newPassword = control.get('newPassword');
-        let confirmPassword = control.get('confirmPassword');
-        
-        if (newPassword.value !== confirmPassword.value)
-            return { matchedPasswords: true };
-        return null;
+        let newP = control.get('newPassword');
+        let confirm = control.get('confirmPassword');
+
+        return newP && confirm && newP.value !== confirm.value ? { matchedPasswords: true } : null;
     }
 
 }

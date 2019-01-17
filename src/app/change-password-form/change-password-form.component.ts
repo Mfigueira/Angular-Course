@@ -13,7 +13,7 @@ export class ChangePasswordFormComponent {
     oldPassword: new FormControl('', Validators.required, PasswordValidators.invalidOldPassword),
     newPassword: new FormControl('', Validators.required),
     confirmPassword: new FormControl('', Validators.required)
-  }, {validators: PasswordValidators.matchedPasswords});
+  }, { validators: PasswordValidators.matchedPasswords });
 
   get oldPassword() {
     return this.form.get('oldPassword');
