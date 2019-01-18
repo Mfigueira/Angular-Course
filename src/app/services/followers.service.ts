@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PostService extends DataService {
+export class FollowersService extends DataService {
 
   constructor(http: HttpClient) {
-    super('https://jsonplaceholder.typicode.com/posts', http);
+    super('https://api.github.com/users/mosh-hamedani/followers', http);
   }
-  
+
 }

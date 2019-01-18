@@ -1,0 +1,8 @@
+.avatar {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.follower-container {
+    height: 100px;
+}
